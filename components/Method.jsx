@@ -75,12 +75,12 @@ export default function Method({ report, total }) {
           <article><b>Keyword context</b><p>Dictionary matching can miss unusual phrasing or match a term used in a different context. Open the extracted text and evidence snippets to verify the interpretation.</p></article>
           <article><b>Mandatory qualifications</b><p>A high aggregate score does not prove GaBi/SimaPro experience, three completed LCA projects, ISO 14040/14044 use, Figma proficiency or user-psychology knowledge. Check each requirement separately.</p></article>
           <article><b>Experience estimates</b><p>Experience is calculated from detected date ranges and relevant role descriptions. Overlaps are merged; reviewer corrections remain visible. Ambiguous dates require source verification.</p></article>
-          <article><b>Human review notes</b><p>AI-assisted notes and overrides are traceability aids, not proof of personal verification. A human reviewer must compare each material correction with the original resume.</p></article>
+          <article><b>Human review notes</b><p>Review notes were drafted with AI assistance and then checked against the original resumes by the applicant (see the sign-off in METHODOLOGY.md). Counts of completed LCA studies rest on what each resume states and should be confirmed with the candidate.</p></article>
           <article><b>Conflicting LCA experience wording</b><p>The supplied LCA job listing says 4–6 years in its heading but 2–3 years of independent LCA project experience in the detailed requirements. The rubric awards full experience points from four years while preserving the conflict for HR review.</p></article>
         </div>
       </section>
       <p className="screening-disclaimer"><b>Fair-use reminder:</b> Use this prototype to organise evidence and prioritise human review. Do not make an employment decision solely from an automated score or inferred personal characteristic.</p>
-      <p className="method-footnote">Current dataset: {total} candidate records · Last processing report: {processedDate}</p>
+      <p className="method-footnote">Full methodology and data-cleaning log: <a href="https://github.com/saicharan-r02/Resume-Ranker/blob/main/METHODOLOGY.md" target="_blank" rel="noreferrer">METHODOLOGY.md</a> · <a href="https://github.com/saicharan-r02/Resume-Ranker/blob/main/CLEANING_LOG.md" target="_blank" rel="noreferrer">CLEANING_LOG.md</a></p>
     </div>
   );
 }

@@ -15,16 +15,16 @@ The latest local `npm run process` and `npm run review -- --log` run produced:
 | Blank / unreadable | 1 |
 | Extraction warnings on readable files | 0 |
 | AI-assisted review overrides applied from `data/overrides.json` | 46 |
-| LCA Consultant classification | 16 |
+| LCA Consultant classification | 14 |
 | UI/UX Intern classification | 24 |
 | Both roles | 0 |
-| Neither / uncertain | 6 |
+| Neither / uncertain | 8 |
 | Candidates in each role ranking | 46 |
 | Still open in Needs Review | 1 |
 
 The one open item is `anonymized_resume_1793685080327.docx`. The DOCX package is valid but its Word document contains no text, image, table, header, footer, or embedded object. It is a blank source file, not a scanned resume that this parser failed to OCR. It remains visible in Needs Review and is excluded from both rankings until the original non-empty resume or verified replacement text is supplied.
 
-The reviewer notes in `data/overrides.json` are code-assisted source-text corrections. Before submitting the assessment, compare them against the original files and personally confirm any uncertain facts (especially the exact number of completed independent LCA studies). Do not claim to have inspected a fact that you have not verified.
+The 46 reviewer notes in `data/overrides.json` were drafted with AI assistance and then checked against original resume documents by the applicant (Sai Charan) on 9 November 2026. Corrections and remaining uncertainty are listed in METHODOLOGY.md §6 and CLEANING_LOG.md.
 
 ## Requirements
 

@@ -75,7 +75,7 @@ The generated `CLEANING_LOG.md` is the detailed record. The current processing r
 - 46 readable and scored; 1 valid but empty DOCX.
 - 46 AI-assisted correction/decision records in `data/overrides.json`.
 - 0 remaining extraction warnings among the readable files.
-- 16 classified LCA, 24 classified UI/UX, 0 Both, 6 Neither/uncertain, and 1 Unreadable.
+- 14 classified LCA, 24 classified UI/UX, 0 Both, 8 Neither/uncertain, and 1 Unreadable.
 - 46 readable candidates ranked in each role list.
 - 1 open review item: `anonymized_resume_1793685080327.docx`.
 
@@ -89,7 +89,14 @@ Important corrections made in the code and data include:
 - Distinguish an image-only document from a completely blank DOCX. The supplied unreadable file is structurally valid but contains no text or images, so it cannot be reconstructed.
 - Allow verified replacement text in `overrides.json` to resolve an original parser error and make the candidate eligible for scoring; the original extraction error is retained as an informational audit note.
 
-The 46 AI-assisted review notes were assembled through a source-text review of the supplied candidate export and resume evidence. This is not a claim that every original file has been independently verified by a human in Microsoft Word. Before final submission, the applicant must compare the notes and counts against the original resume documents—especially any claimed number of completed independent LCA studies—and correct anything not supported.
+The 46 review notes were first drafted with AI assistance from the extracted resume text. On 9 November 2026, Sai Charan compared 46 of the 46 notes with the original resume documents and corrected 2 of them.
+
+Corrections made during the human check:
+- `anonymized_AK_1793682784184.docx`: the note previously associated ESG reporting with LCA; the resume shows Scope 1-3 GHG inventories, BRSR/GRI and ESG data management with only a Coursera LCA course; changed classification to NEITHER, setting LCA years and projects to 0.
+- `anonymized_NA_1793682784346.docx`: the note previously credited LCA keywords in the summary; the resume shows ESG business development and research with no evidenced LCA studies or tools; changed classification to NEITHER, setting LCA years and projects to 0.
+- All other checked notes matched the resume.
+
+Still unverified: the exact number of completed independent LCA studies (which resumes rarely itemize distinctly beyond general project descriptions) and bare ISO standard numbers that were stripped during anonymization.
 
 ## 7. Error handling and limitations
 

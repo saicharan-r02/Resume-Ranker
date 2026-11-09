@@ -413,7 +413,7 @@ export default function Dashboard({ initialCandidates, report }) {
           <span className="brand-text"><b>GFI Talent</b><small>HIRING WORKSPACE</small></span>
         </button>
         <div className="topbar-divider" />
-        <div className="workspace-switcher"><span className="workspace-avatar">G</span><span><b>Growth For Impact</b><small>Assignment workspace</small></span><span className="switcher-chevron">⌄</span></div>
+        <div className="workspace-switcher"><span className="workspace-avatar">G</span><span><b>Growth For Impact</b></span></div>
         <nav className="main-nav" aria-label="Main navigation">
           {NAV_ITEMS.map((item) => <button key={item.id} className={`main-nav-link ${tab === item.id ? 'active' : ''}`} onClick={() => { setTab(item.id); setFilters(DEFAULT_FILTERS); }} aria-current={tab === item.id ? 'page' : undefined}>
             <Icon name={item.id === 'lca' ? 'lca' : item.id === 'ux' ? 'ux' : item.id === 'audit' ? 'audit' : item.id === 'method' ? 'method' : 'overview'} size={16} />

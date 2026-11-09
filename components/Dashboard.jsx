@@ -310,12 +310,12 @@ function AuditPage({ all, onOpen }) {
         <div className="heading-actions"><span className="dataset-chip"><i /> {pendingCount} open item{pendingCount === 1 ? '' : 's'}</span></div>
       </div>
       <div className="stat-grid audit-stats">
-        <StatCard label="Review notes recorded" value={reviewedCount} detail="AI-assisted · not human-approved" icon="file" />
+        <StatCard label="Review notes recorded" value={reviewedCount} detail="AI-drafted · applicant-checked" icon="file" />
         <StatCard label="Needs attention" value={pendingCount} detail="Open follow-up items" tone="warning" icon="clock" />
         <StatCard label="Source issues" value={issueCount} detail="Warnings and errors" icon="filter" />
         <StatCard label="Unreadable files" value={unreadableCount} detail="Excluded from rankings" tone="warning" icon="file" />
       </div>
-      <div className="audit-integrity-note"><span>!</span><p><b>Review integrity:</b> An override marked reviewed means a correction is recorded. It does not prove a human independently checked the source resume. Verify material experience and project corrections before making hiring decisions.</p></div>
+      <div className="audit-integrity-note"><span>!</span><p><b>Review integrity:</b> These notes were drafted with AI assistance and then checked against the source resumes by the applicant (see METHODOLOGY.md §6). A note still does not replace reading the original resume before a hiring decision.</p></div>
       <section className="surface-card audit-card">
         <div className="candidate-card-heading"><div><Eyebrow>ALL SOURCE RECORDS</Eyebrow><h2>Candidate audit trail</h2><p>Find a candidate, inspect the reason for a flag and open the original document.</p></div><label className="search-control audit-search"><Icon name="search" size={17} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search candidate or review note" /></label></div>
         <div className="audit-filters" role="tablist" aria-label="Filter audit records">

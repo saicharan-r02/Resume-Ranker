@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-11-09T09:38:43.172Z",
+  "sourceDir": "resumes",
+  "counts": {
+    "total": 47,
+    "ok": 46,
+    "warning": 0,
+    "error": 1,
+    "LCA": 14,
+    "UX": 24,
+    "BOTH": 0,
+    "NEITHER": 8,
+    "UNREADABLE": 1
+  }
+}

@@ -4,7 +4,7 @@ Generated 2026-11-09 from 47 source resumes. This report is rebuilt from `data/c
 
 ## AI-assisted review overrides
 
-The records below have `reviewed: true` in the overrides file. These are AI-assisted preliminary notes and corrections based on the supplied extracted resume text. The processing pipeline applies them before scoring and ranking. **RECORDED** means a preliminary correction is present; it does not mean the applicant has independently confirmed every claim.
+The records below have `reviewed: true` in the overrides file. They started as AI-assisted notes based on the extracted resume text, and the pipeline applies them before scoring and ranking. These notes were first drafted with AI assistance. On 9 November 2026, Sai Charan compared 46 of the 46 notes with the original resume documents and corrected 2 of them (listed in METHODOLOGY.md §6). **RECORDED** means a correction is present and applied.
 
 | Resume | AI-assisted review note (verify against source) | Fields / decision recorded | Status |
 |---|---|---|---|

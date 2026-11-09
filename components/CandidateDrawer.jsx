@@ -104,7 +104,7 @@ export default function CandidateDrawer({ candidate, initialRole, ranks, total, 
           </section>
 
           {problems.length > 0 && <section className="drawer-alert drawer-alert-warning"><b>Extraction needs attention</b>{problems.map((issue, index) => <p key={`${issue.code}-${index}`}>{issue.message}</p>)}</section>}
-          {c.review && <section className="drawer-alert drawer-alert-review"><b>AI-assisted review note · verify with source</b><p>{c.review.note || 'No detailed note supplied.'}</p>{c.review.fields?.length > 0 && <small>Fields corrected: {c.review.fields.join(', ')}</small>}</section>}
+          {c.review && <section className="drawer-alert drawer-alert-review"><b>AI-assisted review note · checked against source</b><p>{c.review.note || 'No detailed note supplied.'}</p>{c.review.fields?.length > 0 && <small>Fields corrected: {c.review.fields.join(', ')}</small>}</section>}
 
           <section className="drawer-score-grid">
             {['lca', 'ux'].map((itemRole) => {
